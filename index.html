@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexaflow — Premium Mobile-First Digital Agency</title>
+  <meta name="description" content="We build luxury digital experiences, modern design systems, and conversion-focused websites handcrafted for serious high-value brands. Founded by Krish.">
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta property="og:title" content="Nexaflow — Premium Mobile-First Digital Agency">
+  <meta property="og:description" content="We build luxury digital experiences, modern design systems, and conversion-focused websites handcrafted for serious high-value brands.">
+  <meta property="og:type" content="website">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Premium Scroll progress indicator -->
+  <div id="scroll-progress-container" aria-hidden="true">
+    <div id="scroll-progress-bar"></div>
+  </div>
+
+  <!-- Desktop Custom Trailing Cursor overlays (Desktop Only) -->
+  <div class="custom-cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Premium Native Film Grain Overlay -->
+  <div class="film-grain" aria-hidden="true"></div>
+
+  <!-- ==========================================
+       GLOBAL DESKTOP & MOBILE NAVIGATION
+       ========================================== -->
+  <header id="global-header">
+    <a href="#home" class="logo" id="logo-home-link" aria-label="Nexaflow Home">
+      Nexaflow<span class="logo-dot"></span>
+    </a>
+    
+    <!-- Desktop Transparent/Scrolled Navbar -->
+    <nav class="desktop-nav" aria-label="Desktop navigation">
+      <a href="#home" class="nav-link active" data-hash="home">Home</a>
+      <a href="#work" class="nav-link" data-hash="work">Work</a>
+      <a href="#services" class="nav-link" data-hash="services">Services</a>
+      <a href="#about" class="nav-link" data-hash="about">About</a>
+      <a href="#process" class="nav-link" data-hash="process">Process</a>
+      <a href="#testimonials" class="nav-link" data-hash="testimonials">Reviews</a>
+      <a href="#contact" class="nav-link" data-hash="contact">Contact</a>
+    </nav>
+    
+    <div class="header-actions">
+      <a href="#contact" class="header-cta-btn">Book A Call</a>
+      <!-- Floating Light/Dark Mode Switcher Widget -->
+      <div class="theme-switch-container">
+        <button class="theme-switch-btn" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg id="theme-icon" viewBox="0 0 24 24">
+            <!-- Sun icon paths (default) -->
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Sticky Bottom Navigation (Thumb Friendly) -->
+  <div class="mobile-nav-container" id="mobile-nav">
+    <nav class="mobile-nav-bar" aria-label="Mobile navigation">
+      <a href="#home" class="mobile-nav-item active" data-hash="home" aria-label="Home">
+        <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>Home</span>
+        <span class="active-dot"></span>
+      </a>
+      <a href="#work" class="mobile-nav-item" data-hash="work" aria-label="Work">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <span>Work</span>
+        <span class="active-dot"></span>
+      </a>
+      <a href="#services" class="mobile-nav-item" data-hash="services" aria-label="Services">
+        <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        <span>Services</span>
+        <span class="active-dot"></span>
+      </a>
+      <a href="#about" class="mobile-nav-item" data-hash="about" aria-label="About">
+        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>About</span>
+        <span class="active-dot"></span>
+      </a>
+      <a href="#contact" class="mobile-nav-item" data-hash="contact" aria-label="Contact">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        <span>Contact</span>
+        <span class="active-dot"></span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Floating CTAs -->
+  <div class="sticky-cta" id="sticky-call-cta">
+    <a href="#contact" class="sticky-cta-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      Book a Call
+    </a>
+  </div>
+
+  <div class="floating-whatsapp" id="sticky-whatsapp-cta">
+    <a href="https://wa.me/919855990775" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="Contact Nexaflow on WhatsApp">
+      <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.717-1.458L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.742.002-2.602-1.005-5.05-2.838-6.885-1.833-1.834-4.285-2.843-6.888-2.844-5.448 0-9.873 4.373-9.877 9.747-.001 1.768.479 3.493 1.391 5.011l-.999 3.65 3.754-.972.17.1c1.5 1.05 3.12 1.55 4.8 1.55zM17.65 14.86c-.3-.15-1.78-.88-2.06-.98-.28-.1-.49-.15-.69.15-.2.3-.78.98-.96 1.18-.18.2-.36.23-.66.08-.3-.15-1.27-.47-2.42-1.5-1-.89-1.67-1.98-1.87-2.33-.2-.3-.02-.47.13-.62.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.69-1.67-.95-2.29-.25-.61-.51-.53-.69-.53-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.4-.29.32-1.11 1.08-1.11 2.64 0 1.56 1.14 3.07 1.3 3.28.16.2 2.24 3.42 5.43 4.8 1.19.51 2.12.82 2.85 1.05.8.25 1.53.22 2.1.13.64-.1 1.78-.73 2.03-1.43.25-.7.25-1.29.17-1.43-.08-.13-.28-.21-.58-.36z"/></svg>
+    </a>
+  </div>
+
+  <!-- ==========================================
+       MAIN PAGES MOUNT AREA
+       ========================================== -->
+  <main id="app">
+
+    <!-- ==========================================
+         PAGE 1: HOME
+         ========================================== -->
+    <div id="page-home" class="page-view active">
+      
+      <!-- Hero Section -->
+      <section class="container hero-wrapper">
+        <!-- Layered animated gradients background -->
+        <div class="hero-gradient-overlay" aria-hidden="true">
+          <div class="hero-particle hero-particle-1"></div>
+          <div class="hero-particle hero-particle-2"></div>
+        </div>
+
+        <span class="caps-badge reveal-on-scroll reveal-text">Premium Digital Studio</span>
+        <h1 class="reveal-on-scroll reveal-text" id="hero-headline">We build digital experiences people <span class="text-accent">remember.</span></h1>
+        
+        <div class="hero-meta reveal-on-scroll reveal-text">
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>Handcrafted Details Only</span>
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 22 12 17 22 22 12 2"/></svg>
+            <span>98% Mobile-First Focus</span>
+          </div>
+          <div class="hero-meta-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Conversion Optimized</span>
+          </div>
+        </div>
+
+        <p class="reveal-on-scroll reveal-text" style="max-width: 620px; margin-bottom: var(--spacing-md);">
+          Nexaflow is an boutique design and development agency. We craft warm, luxurious digital spaces tailored specifically for serious businesses looking to stand out in a generic, template-driven world.
+        </p>
+
+        <div class="reveal-on-scroll reveal-button" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: var(--spacing-md);">
+          <a href="#contact" class="btn btn-primary btn-magnetic">Start a Project</a>
+          <a href="#work" class="btn btn-secondary btn-magnetic">Explore Work</a>
+        </div>
+
+        <!-- Floating gyro UI elements -->
+        <div class="hero-floating-elements reveal-on-scroll reveal-image" id="hero-floating-box">
+          <div class="hero-ui-card">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span style="font-size: 0.75rem; font-weight: 600; color: var(--color-text-secondary); text-transform: uppercase;">BrightSmile Dental</span>
+              <span style="color: var(--color-accent); font-size: 0.75rem; font-weight: 700;">+140%</span>
+            </div>
+            <h4 style="font-size: 1.1rem; color: var(--color-text-primary);">Cosmetic Bookings</h4>
+            <p style="font-size: 0.8rem; margin-top: 4px;">travertine digital sanctuary layout</p>
+          </div>
+          <div class="hero-ui-card">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span style="font-size: 0.75rem; font-weight: 600; color: var(--color-text-secondary); text-transform: uppercase;">Luxe Aura</span>
+              <span style="color: var(--color-accent); font-size: 0.75rem; font-weight: 700;">3x</span>
+            </div>
+            <h4 style="font-size: 1.1rem; color: var(--color-text-primary);">Online Scheduling</h4>
+            <p style="font-size: 0.8rem; margin-top: 4px;">tactile book card overlays</p>
+          </div>
+          <div class="hero-ui-card">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+              <span style="font-size: 0.75rem; font-weight: 600; color: var(--color-text-secondary); text-transform: uppercase;">Apex Forge</span>
+              <span style="color: var(--color-accent); font-size: 0.75rem; font-weight: 700;">+45%</span>
+            </div>
+            <h4 style="font-size: 1.1rem; color: var(--color-text-primary);">Member Retention</h4>
+            <p style="font-size: 0.8rem; margin-top: 4px;">limestone athletic training app</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Featured Work Preview -->
+      <section class="container" style="background-color: var(--color-bg-secondary); border-top: var(--border-light); border-bottom: var(--border-light);">
+        <div class="reveal-on-scroll reveal-text" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--spacing-lg); flex-wrap: wrap; gap: var(--spacing-sm);">
+          <div>
+            <span class="caps-badge">Portfolio Highlights</span>
+            <h2>Selected Works</h2>
+          </div>
+          <a href="#work" class="btn-text">
+            View All Projects 
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <div class="featured-grid">
+          <!-- Card 1 -->
+          <div class="featured-card reveal-on-scroll reveal-image" data-project-card="dental">
+            <a href="#work">
+              <div class="img-zoom-wrapper">
+                <img src="assets/images/dental_case_study.png" alt="BrightSmile Dental Lobby View" loading="lazy">
+              </div>
+            </a>
+            <div class="featured-card-info">
+              <div>
+                <h3 class="featured-card-title">BrightSmile Dental</h3>
+                <p>Premium Dental Clinic Website</p>
+              </div>
+              <span class="featured-card-category">Creative UI / UX</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="featured-card reveal-on-scroll reveal-image" data-project-card="salon">
+            <a href="#work">
+              <div class="img-zoom-wrapper">
+                <img src="assets/images/salon_case_study.png" alt="Luxe Aura Lounge" loading="lazy">
+              </div>
+            </a>
+            <div class="featured-card-info">
+              <div>
+                <h3 class="featured-card-title">Luxe Aura</h3>
+                <p>Beauty Salon Experience</p>
+              </div>
+              <span class="featured-card-category">Branding / Dev</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="featured-card reveal-on-scroll reveal-image" data-project-card="gym">
+            <a href="#work">
+              <div class="img-zoom-wrapper">
+                <img src="assets/images/gym_case_study.png" alt="Apex Forge Modern Training Space" loading="lazy">
+              </div>
+            </a>
+            <div class="featured-card-info">
+              <div>
+                <h3 class="featured-card-title">Apex Forge</h3>
+                <p>Gym & Fitness Website</p>
+              </div>
+              <span class="featured-card-category">Platform / UX</span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="featured-card reveal-on-scroll reveal-image" data-project-card="estate">
+            <a href="#work">
+              <div class="img-zoom-wrapper">
+                <img src="assets/images/realestate_case_study.png" alt="Skyline Haven Mediterranean Villa" loading="lazy">
+              </div>
+            </a>
+            <div class="featured-card-info">
+              <div>
+                <h3 class="featured-card-title">Skyline Haven</h3>
+                <p>Real Estate Platform</p>
+              </div>
+              <span class="featured-card-category">Engine / Design</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Padding helper for asymmetrical offset grid -->
+        <div style="height: 4rem; display: block;" aria-hidden="true"></div>
+      </section>
+
+      <!-- Why Nexaflow Section -->
+      <section class="container">
+        <div class="reveal-on-scroll reveal-text" style="max-width: 700px; margin-bottom: var(--spacing-lg);">
+          <span class="caps-badge">Our Edge</span>
+          <h2>We don't build typical templates. We design digital landmarks.</h2>
+        </div>
+
+        <div class="grid-2">
+          <div class="premium-card reveal-on-scroll reveal-text">
+            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📱</div>
+            <h3 style="margin-bottom: var(--spacing-xs);">98% Mobile-First Execution</h3>
+            <p>Most agencies shrink desktop pages to mobile, leaving bad thumb flow. We sketch mobile screens first. Thumb-friendly navigation, tactile targets, responsive sliders, and zero latency are our defaults.</p>
+          </div>
+
+          <div class="premium-card reveal-on-scroll reveal-text">
+            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">📈</div>
+            <h3 style="margin-bottom: var(--spacing-xs);">Conversion-Obsessed Logic</h3>
+            <p>An expensive layout is useless if it doesn't attract clients. Every pixel is planned to lead visitors towards your booking forms. We structure copy and sticky elements to continuously guide your users.</p>
+          </div>
+
+          <div class="premium-card reveal-on-scroll reveal-image">
+            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">🎨</div>
+            <h3 style="margin-bottom: var(--spacing-xs);">Handcrafted Premium UI/UX</h3>
+            <p>Say goodbye to generic layouts and neon-blue buttons. We use warm, luxurious editorial canvases, unique layouts, subtle grain textures, and artistic dividers that elevate your business to high-luxury status.</p>
+          </div>
+
+          <div class="premium-card reveal-on-scroll reveal-image">
+            <div style="font-size: 2rem; margin-bottom: var(--spacing-sm);">⚡</div>
+            <h3 style="margin-bottom: var(--spacing-xs);">Composited 100/100 Speed</h3>
+            <p>Our codebases load in under 1 second. Clean structural logic, optimized image arrays, native CSS routines, and lazy-loading means zero screen delay, reducing visitor dropoff and boosting search engine SEO.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Statistics Section with Animated Counters -->
+      <section class="container" style="background-color: var(--color-bg-secondary); border-top: var(--border-light); border-bottom: var(--border-light);">
+        <div class="grid-3">
+          <div class="stat-box reveal-on-scroll reveal-text">
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-box reveal-on-scroll reveal-text">
+            <div class="stat-number" data-count="98">0</div>
+            <div class="stat-label">User Satisfaction</div>
+          </div>
+          <div class="stat-box reveal-on-scroll reveal-image">
+            <div class="stat-number" data-count="100">0</div>
+            <div class="stat-label">Tailored Design System</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Preview Section -->
+      <section class="container">
+        <div class="asym-grid">
+          <div class="reveal-on-scroll reveal-text">
+            <span class="caps-badge">How We Work</span>
+            <h2>Our streamlined process for high-end digital excellence.</h2>
+            <p style="margin-top: 1rem; margin-bottom: 2rem; max-width: 500px;">
+              We avoid massive meetings. Instead, we execute clean, phase-by-phase design and code that keeps your brand moving forward seamlessly.
+            </p>
+            <a href="#process" class="btn btn-secondary btn-magnetic">Detailed Workflow</a>
+          </div>
+
+          <div class="timeline-preview reveal-on-scroll reveal-image">
+            <div class="timeline-preview-item">
+              <h4 style="color: var(--color-text-primary);">01. Discovery & Strategy</h4>
+              <p style="font-size: 0.9rem;">We extract your business essence and plan high-conversion hooks.</p>
+            </div>
+            <div class="timeline-preview-item">
+              <h4 style="color: var(--color-text-primary);">02. Immersive UI Design</h4>
+              <p style="font-size: 0.9rem;">We craft editorial mockups using custom luxurious colors and graphics.</p>
+            </div>
+            <div class="timeline-preview-item">
+              <h4 style="color: var(--color-text-primary);">03. Performant Development</h4>
+              <p style="font-size: 0.9rem;">We build custom, rapid codes ensuring high SEO index and solid speeds.</p>
+            </div>
+            <div class="timeline-preview-item" style="padding-bottom: 0;">
+              <h4 style="color: var(--color-text-primary);">04. Rigorous Launch</h4>
+              <p style="font-size: 0.9rem;">We audit responsiveness, verify integrations, and launch perfectly.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Auto Marquee Upgrade Section -->
+      <section class="container" style="background-color: var(--color-bg-secondary); border-top: var(--border-light); border-bottom: var(--border-light); overflow: hidden;">
+        <div class="reveal-on-scroll reveal-text" style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--spacing-sm); flex-wrap: wrap; gap: var(--spacing-sm);">
+          <div>
+            <span class="caps-badge">Testimonials</span>
+            <h2>Attracting Serious Quality</h2>
+          </div>
+          <a href="#testimonials" class="btn-text">
+            Read Client Stories 
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <!-- Infinite marquee track -->
+        <div class="testimonials-marquee-container reveal-on-scroll reveal-image">
+          <div class="testimonials-marquee-track">
+            
+            <div class="testimonial-slide">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="testimonial-quote">"Nexaflow built a beautiful, calming website that captures our physical luxury space. Booking appointments on mobile is completely effortless for our patients."</div>
+              <div class="testimonial-author">
+                <div class="testimonial-author-avatar">BA</div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-primary);">Dr. Beatrice Smile</h4>
+                  <p style="font-size: 0.8rem;">Cosmetic Dentist, BrightSmile Dental</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-slide">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="testimonial-quote">"Clients love our new elegant mobile scheduling. It looks expensive, operates instantly, and has freed up hours of booking calls."</div>
+              <div class="testimonial-author">
+                <div class="testimonial-author-avatar">CV</div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-primary);">Clara Vance</h4>
+                  <p style="font-size: 0.8rem;">Salon Director, Luxe Aura</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="testimonial-quote">"The dark, premium training interface Nexaflow built perfectly matches the luxurious look of our physical weights floor. Our members love the custom sign-up flow."</div>
+              <div class="testimonial-author">
+                <div class="testimonial-author-avatar">MF</div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-primary);">Marcus Forge</h4>
+                  <p style="font-size: 0.8rem;">Gym Owner, Apex Forge</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Duplicate items for looping -->
+            <div class="testimonial-slide">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="testimonial-quote">"Nexaflow built a beautiful, calming website that captures our physical luxury space. Booking appointments on mobile is completely effortless for our patients."</div>
+              <div class="testimonial-author">
+                <div class="testimonial-author-avatar">BA</div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-primary);">Dr. Beatrice Smile</h4>
+                  <p style="font-size: 0.8rem;">Cosmetic Dentist, BrightSmile Dental</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="testimonial-slide">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="testimonial-quote">"Clients love our new elegant mobile scheduling. It looks expensive, operates instantly, and has freed up hours of booking calls."</div>
+              <div class="testimonial-author">
+                <div class="testimonial-author-avatar">CV</div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-primary);">Clara Vance</h4>
+                  <p style="font-size: 0.8rem;">Salon Director, Luxe Aura</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide">
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <div class="testimonial-quote">"The dark, premium training interface Nexaflow built perfectly matches the luxurious look of our physical weights floor. Our members love the custom sign-up flow."</div>
+              <div class="testimonial-author">
+                <div class="testimonial-author-avatar">MF</div>
+                <div>
+                  <h4 style="font-size: 1rem; color: var(--color-text-primary);">Marcus Forge</h4>
+                  <p style="font-size: 0.8rem;">Gym Owner, Apex Forge</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Home CTA -->
+      <section class="container">
+        <div class="final-cta-box reveal-on-scroll reveal-text">
+          <span class="caps-badge">Next Step</span>
+          <h2>Let's build something <span class="text-accent">exceptional.</span></h2>
+          <p>We work with a highly limited number of businesses each season to ensure handcrafted focus and premium pixel-perfection. Book an initial strategic call today.</p>
+          <a href="#contact" class="btn btn-primary btn-magnetic">Book A Strategy Session</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ==========================================
+         PAGE 2: WORK (PREMIUM SHOWCASE)
+         ========================================== -->
+    <div id="page-work" class="page-view">
+      <section class="container">
+        <span class="caps-badge">Selected Work</span>
+        <h2>Websites built to attract and scale.</h2>
+        
+        <div class="showcase-list-container">
+          
+          <!-- Project 1: Skyline Haven -->
+          <article class="reveal-on-scroll project-showcase-card">
+            <header class="project-showcase-header">
+              <h3 class="project-showcase-title">Skyline Haven</h3>
+              <p class="project-showcase-subtitle">Premium Real Estate Website</p>
+            </header>
+            
+            <div class="project-showcase-image-wrapper">
+              <img src="assets/images/realestate_case_study.png" alt="Skyline Haven Mediterranean Luxury Home Website Preview" loading="lazy">
+            </div>
+            
+            <div class="project-showcase-action">
+              <a href="https://skylinehaven-nexaflow.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-view-website-premium btn-magnetic">
+                <span>View Website</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="external-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+            
+            <div class="project-showcase-details">
+              <div class="project-showcase-services">
+                <h4>Services Provided</h4>
+                <div class="showcase-badges">
+                  <span class="spec-tag">UI/UX Design</span>
+                  <span class="spec-tag">Website Development</span>
+                  <span class="spec-tag">Responsive Design</span>
+                  <span class="spec-tag">Mobile Optimization</span>
+                  <span class="spec-tag">SEO Structure</span>
+                  <span class="spec-tag">Performance Optimization</span>
+                </div>
+              </div>
+              
+              <div class="project-showcase-outcomes">
+                <h4>Project Outcomes</h4>
+                <ul class="showcase-checklist">
+                  <li><span class="checklist-check">✓</span> Modern Brand Presence</li>
+                  <li><span class="checklist-check">✓</span> Mobile-Friendly Experience</li>
+                  <li><span class="checklist-check">✓</span> Faster User Journey</li>
+                  <li><span class="checklist-check">✓</span> Improved Customer Trust</li>
+                  <li><span class="checklist-check">✓</span> Better Lead Generation</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          
+          <hr class="showcase-divider">
+          
+          <!-- Project 2: BrightSmile Dental -->
+          <article class="reveal-on-scroll project-showcase-card">
+            <header class="project-showcase-header">
+              <h3 class="project-showcase-title">BrightSmile Dental</h3>
+              <p class="project-showcase-subtitle">Premium Dental Clinic Website</p>
+            </header>
+            
+            <div class="project-showcase-image-wrapper">
+              <img src="assets/images/dental_case_study.png" alt="BrightSmile Dental Clinic Website Preview" loading="lazy">
+            </div>
+            
+            <div class="project-showcase-action">
+              <a href="https://brightsmile-nexaflow.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-view-website-premium btn-magnetic">
+                <span>View Website</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="external-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+            
+            <div class="project-showcase-details">
+              <div class="project-showcase-services">
+                <h4>Services Provided</h4>
+                <div class="showcase-badges">
+                  <span class="spec-tag">UI/UX Design</span>
+                  <span class="spec-tag">Website Development</span>
+                  <span class="spec-tag">Responsive Design</span>
+                  <span class="spec-tag">Mobile Optimization</span>
+                  <span class="spec-tag">SEO Structure</span>
+                  <span class="spec-tag">Performance Optimization</span>
+                </div>
+              </div>
+              
+              <div class="project-showcase-outcomes">
+                <h4>Project Outcomes</h4>
+                <ul class="showcase-checklist">
+                  <li><span class="checklist-check">✓</span> Modern Brand Presence</li>
+                  <li><span class="checklist-check">✓</span> Mobile-Friendly Experience</li>
+                  <li><span class="checklist-check">✓</span> Faster User Journey</li>
+                  <li><span class="checklist-check">✓</span> Improved Customer Trust</li>
+                  <li><span class="checklist-check">✓</span> Better Lead Generation</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          
+          <hr class="showcase-divider">
+          
+          <!-- Project 3: Apex Forge -->
+          <article class="reveal-on-scroll project-showcase-card">
+            <header class="project-showcase-header">
+              <h3 class="project-showcase-title">Apex Forge</h3>
+              <p class="project-showcase-subtitle">Premium Gym & Fitness Website</p>
+            </header>
+            
+            <div class="project-showcase-image-wrapper">
+              <img src="assets/images/gym_case_study.png" alt="Apex Forge Modern Gym Website Preview" loading="lazy">
+            </div>
+            
+            <div class="project-showcase-action">
+              <a href="https://apexforge-nexaflow.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-view-website-premium btn-magnetic">
+                <span>View Website</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="external-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+            
+            <div class="project-showcase-details">
+              <div class="project-showcase-services">
+                <h4>Services Provided</h4>
+                <div class="showcase-badges">
+                  <span class="spec-tag">UI/UX Design</span>
+                  <span class="spec-tag">Website Development</span>
+                  <span class="spec-tag">Responsive Design</span>
+                  <span class="spec-tag">Mobile Optimization</span>
+                  <span class="spec-tag">SEO Structure</span>
+                  <span class="spec-tag">Performance Optimization</span>
+                </div>
+              </div>
+              
+              <div class="project-showcase-outcomes">
+                <h4>Project Outcomes</h4>
+                <ul class="showcase-checklist">
+                  <li><span class="checklist-check">✓</span> Modern Brand Presence</li>
+                  <li><span class="checklist-check">✓</span> Mobile-Friendly Experience</li>
+                  <li><span class="checklist-check">✓</span> Faster User Journey</li>
+                  <li><span class="checklist-check">✓</span> Improved Customer Trust</li>
+                  <li><span class="checklist-check">✓</span> Better Lead Generation</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          
+          <hr class="showcase-divider">
+          
+          <!-- Project 4: Luxe Aura -->
+          <article class="reveal-on-scroll project-showcase-card">
+            <header class="project-showcase-header">
+              <h3 class="project-showcase-title">Luxe Aura</h3>
+              <p class="project-showcase-subtitle">Premium Beauty Salon Website</p>
+            </header>
+            
+            <div class="project-showcase-image-wrapper">
+              <img src="assets/images/salon_case_study.png" alt="Luxe Aura Beauty Salon Website Preview" loading="lazy">
+            </div>
+            
+            <div class="project-showcase-action">
+              <a href="https://luxeauraa.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-view-website-premium btn-magnetic">
+                <span>View Website</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="external-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+            
+            <div class="project-showcase-details">
+              <div class="project-showcase-services">
+                <h4>Services Provided</h4>
+                <div class="showcase-badges">
+                  <span class="spec-tag">UI/UX Design</span>
+                  <span class="spec-tag">Website Development</span>
+                  <span class="spec-tag">Responsive Design</span>
+                  <span class="spec-tag">Mobile Optimization</span>
+                  <span class="spec-tag">SEO Structure</span>
+                  <span class="spec-tag">Performance Optimization</span>
+                </div>
+              </div>
+              
+              <div class="project-showcase-outcomes">
+                <h4>Project Outcomes</h4>
+                <ul class="showcase-checklist">
+                  <li><span class="checklist-check">✓</span> Modern Brand Presence</li>
+                  <li><span class="checklist-check">✓</span> Mobile-Friendly Experience</li>
+                  <li><span class="checklist-check">✓</span> Faster User Journey</li>
+                  <li><span class="checklist-check">✓</span> Improved Customer Trust</li>
+                  <li><span class="checklist-check">✓</span> Better Lead Generation</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+        
+        <!-- Final Showcase Section -->
+        <div class="final-showcase-cta reveal-on-scroll">
+          <h3>Many More Projects</h3>
+          <p>These are a few selected projects from our portfolio. We have delivered 50+ websites across multiple industries including healthcare, fitness, beauty, real estate, local businesses and service brands.</p>
+          <a href="#contact" class="btn btn-primary btn-magnetic">
+            Book a Call
+          </a>
+        </div>
+        
+      </section>
+    </div>
+
+    <!-- ==========================================
+         PAGE 3: SERVICES
+         ========================================== -->
+    <div id="page-services" class="page-view">
+      <section class="container">
+        <div class="service-header-box reveal-on-scroll reveal-text">
+          <span class="caps-badge">Our Capabilities</span>
+          <h2>Digital tools designed to attract, convince, and scale.</h2>
+          <p style="max-width: 600px; margin-top: 1rem;">
+            We offer fully comprehensive creative design and code packages. No templates, no shortcuts. Every deliverable is custom-tailored to your exact business metrics.
+          </p>
+        </div>
+
+        <div class="service-list-wrapper">
+          
+          <!-- Service 1 -->
+          <div class="service-card-detailed reveal-on-scroll reveal-text">
+            <div class="service-card-header">
+              <span class="service-number">01</span>
+              <h3>Website Design (UI/UX)</h3>
+              <span class="caps-badge">Est. 2-3 Weeks</span>
+            </div>
+            <p>
+              We craft editorial digital layouts that look expensive, warm, and highly professional. We focus completely on interactive layouts, clean typography, custom responsive flows, and conversion metrics.
+            </p>
+            <div class="deliverables-list">
+              <span class="deliverable-item">Interactive Wireframes</span>
+              <span class="deliverable-item">Editorial Layouts</span>
+              <span class="deliverable-item">Tailored Palette Strategy</span>
+              <span class="deliverable-item">Mobile Responsive Prototypes</span>
+            </div>
+            <div class="service-card-meta">
+              <div class="service-meta-block">
+                <h5>Our Process</h5>
+                <p>Sketch -> Interactive Wireframe -> Design Presentation</p>
+              </div>
+              <div class="service-meta-block">
+                <h5>Benefit</h5>
+                <p>Immediately elevates brand status to high-end industry leader</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card-detailed reveal-on-scroll reveal-text">
+            <div class="service-card-header">
+              <span class="service-number">02</span>
+              <h3>Website Development</h3>
+              <span class="caps-badge">Est. 3-4 Weeks</span>
+            </div>
+            <p>
+              We build custom codes utilizing standard native elements. No heavy frameworks, no unnecessary loading sheets. Clean semantic structures guarantee high speed scores, solid browser reliability, and excellent SEO rankings.
+            </p>
+            <div class="deliverables-list">
+              <span class="deliverable-item">Semantic HTML/CSS Codebase</span>
+              <span class="deliverable-item">SPA Dynamic Engines</span>
+              <span class="deliverable-item">Responsive Fluid Adapts</span>
+              <span class="deliverable-item">Performance Optimized Scripts</span>
+            </div>
+            <div class="service-card-meta">
+              <div class="service-meta-block">
+                <h5>Our Process</h5>
+                <p>Architecture Planning -> CSS Foundations -> Logic Engine -> Rigorous Audits</p>
+              </div>
+              <div class="service-meta-block">
+                <h5>Benefit</h5>
+                <p>100/100 speed, seamless loads, absolute security and durability</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-card-detailed reveal-on-scroll reveal-image">
+            <div class="service-card-header">
+              <span class="service-number">03</span>
+              <h3>UI/UX Design Systems</h3>
+              <span class="caps-badge">Est. 2 Weeks</span>
+            </div>
+            <p>
+              We construct custom, reusable style sheets and UI modules (buttons, chips, inputs, headers, grids) that ensure absolute consistency across your entire web and physical presentations.
+            </p>
+            <div class="deliverables-list">
+              <span class="deliverable-item">Reusable Layout Elements</span>
+              <span class="deliverable-item">Color Tokens Grid</span>
+              <span class="deliverable-item">Dynamic Heading Typographies</span>
+              <span class="deliverable-item">Interactive Button Libraries</span>
+            </div>
+            <div class="service-card-meta">
+              <div class="service-meta-block">
+                <h5>Our Process</h5>
+                <p>Palette Definition -> Components Building -> System Documentation</p>
+              </div>
+              <div class="service-meta-block">
+                <h5>Benefit</h5>
+                <p>Seamless scaling and visual consistency for years to come</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-card-detailed reveal-on-scroll reveal-image">
+            <div class="service-card-header">
+              <span class="service-number">04</span>
+              <h3>E-Commerce Websites</h3>
+              <span class="caps-badge">Est. 4-6 Weeks</span>
+            </div>
+            <p>
+              We design and construct high-conversion checkout flows, clean luxury catalogs, and custom cart sheets that turn browsing into absolute luxury retail therapy.
+            </p>
+            <div class="deliverables-list">
+              <span class="deliverable-item">Custom Luxury Catalogs</span>
+              <span class="deliverable-item">Tactile Dynamic Cart Drawer</span>
+              <span class="deliverable-item">Frictionless One-Step Checkouts</span>
+              <span class="deliverable-item">Safe Booking Calendars</span>
+            </div>
+            <div class="service-card-meta">
+              <div class="service-meta-block">
+                <h5>Our Process</h5>
+                <p>Catalog Strategy -> Checkout Mapping -> Security Code Audit</p>
+              </div>
+              <div class="service-meta-block">
+                <h5>Benefit</h5>
+                <p>Increased cart checkouts, higher average order value, extreme trust</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-card-detailed reveal-on-scroll reveal-button">
+            <div class="service-card-header">
+              <span class="service-number">05</span>
+              <h3>High-Conversion Landing Pages</h3>
+              <span class="caps-badge">Est. 1-2 Weeks</span>
+            </div>
+            <p>
+              Single-focus digital spaces engineered to convert leads on direct traffic. Perfectly structured for active search campaigns, marketing triggers, or premium seasonal announcements.
+            </p>
+            <div class="deliverables-list">
+              <span class="deliverable-item">Direct CTA Logic Map</span>
+              <span class="deliverable-item">High-Impact Hero Layouts</span>
+              <span class="deliverable-item">Custom Client Feedback Grid</span>
+              <span class="deliverable-item">Interactive Lead Fields</span>
+            </div>
+            <div class="service-card-meta">
+              <div class="service-meta-block">
+                <h5>Our Process</h5>
+                <p>Metric Discovery -> Single Focus Wireframe -> Fast Execution</p>
+              </div>
+              <div class="service-meta-block">
+                <h5>Benefit</h5>
+                <p>Immediate boost in advertising campaign conversion rates</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-card-detailed reveal-on-scroll reveal-button">
+            <div class="service-card-header">
+              <span class="service-number">06</span>
+              <h3>Branding Systems</h3>
+              <span class="caps-badge">Est. 3 Weeks</span>
+            </div>
+            <p>
+              We craft comprehensive identities. Beyond simple logotypes, we define color strategies, font guidelines, visual hierarchies, and aesthetic directions that communicate expensive premium quality.
+            </p>
+            <div class="deliverables-list">
+              <span class="deliverable-item">Logorious Marks & Logos</span>
+              <span class="deliverable-item">Brand Color & Style Guides</span>
+              <span class="deliverable-item">Social Presentation Layouts</span>
+              <span class="deliverable-item">Aesthetic Pattern Packets</span>
+            </div>
+            <div class="service-card-meta">
+              <div class="service-meta-block">
+                <h5>Our Process</h5>
+                <p>Moodboards Selection -> Concept Creation -> Identity Guidelines</p>
+              </div>
+              <div class="service-meta-block">
+                <h5>Benefit</h5>
+                <p>Delivers an instant aura of high-luxury trust and authority</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         PAGE 4: ABOUT & ANIMATED SKILLS CHARTS
+         ========================================== -->
+    <div id="page-about" class="page-view">
+      <section class="container">
+        <span class="caps-badge">Our Legacy</span>
+        <h2>High-end aesthetics, engineered to build serious digital wealth.</h2>
+        
+        <div class="about-quote-box reveal-on-scroll reveal-text">
+          <p class="about-quote-text">
+            "Design is not a decorative layer. Design is the most direct signal of your brand's quality, standard, and authority."
+          </p>
+        </div>
+
+        <div class="asym-grid reverse" style="margin-bottom: var(--spacing-lg);">
+          <div class="img-zoom-wrapper reveal-on-scroll reveal-image" style="aspect-ratio: 4/5;">
+            <img src="assets/images/dental_case_study.png" alt="Aesthetic workspace layout" loading="lazy">
+          </div>
+          <div class="reveal-on-scroll reveal-text" style="display: flex; flex-direction: column; gap: var(--spacing-sm);">
+            <span class="caps-badge">The Collective</span>
+            <h3>About Nexaflow</h3>
+            <p>
+              Nexaflow was formed specifically to counter the rise of generic, neon-blue templates, cluttered layouts, and artificial software interfaces. We believe serious, high-value businesses deserve digital representations that mirror the handcrafted details of a luxury architecture studio or premium physical hotel lobby.
+            </p>
+            <p>
+              Operating from boutique creative capitals, we combine top-tier design curation with highly clean software programming. We refuse to use cookie-cutter builders. Every line of code and visual placement is meticulously handcrafted.
+            </p>
+          </div>
+        </div>
+
+        <!-- Animated circular SVG skill chart visualization -->
+        <div class="skills-visualizer-container reveal-on-scroll reveal-text" style="margin-bottom: var(--spacing-lg);">
+          <span class="caps-badge">Aesthetic Curation</span>
+          <h3>Skills Visualization</h3>
+          <p style="margin-bottom: 1.5rem;">How our core competencies are balanced to craft high-conversion milestones.</p>
+          
+          <div class="skills-chart-grid">
+            <div class="skills-list-details">
+              <div class="skills-progress-row" data-skill-percentage="95">
+                <div class="skills-progress-row-header">
+                  <span>UI/UX Design</span>
+                  <span>95%</span>
+                </div>
+                <div style="width: 100%; height: 4px; background-color: var(--color-bg-secondary); border-radius: 2px;">
+                  <div class="skill-bar-fill" style="width: 0%; height: 100%; background-color: var(--color-accent); border-radius: 2px; transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                </div>
+              </div>
+              <div class="skills-progress-row" data-skill-percentage="90">
+                <div class="skills-progress-row-header">
+                  <span>Web Development</span>
+                  <span>90%</span>
+                </div>
+                <div style="width: 100%; height: 4px; background-color: var(--color-bg-secondary); border-radius: 2px;">
+                  <div class="skill-bar-fill" style="width: 0%; height: 100%; background-color: var(--color-accent); border-radius: 2px; transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                </div>
+              </div>
+              <div class="skills-progress-row" data-skill-percentage="85">
+                <div class="skills-progress-row-header">
+                  <span>Branding Systems</span>
+                  <span>85%</span>
+                </div>
+                <div style="width: 100%; height: 4px; background-color: var(--color-bg-secondary); border-radius: 2px;">
+                  <div class="skill-bar-fill" style="width: 0%; height: 100%; background-color: var(--color-accent); border-radius: 2px; transition: width 1.5s cubic-bezier(0.16, 1, 0.3, 1);"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Handcrafted interactive circular SVG tracker -->
+            <div class="skills-radial-track-box">
+              <svg class="skills-radial-svg" viewBox="0 0 200 200">
+                <circle class="skills-radial-circle-bg" cx="100" cy="100" r="90"></circle>
+                <circle class="skills-radial-circle-fill" id="radial-circle-track" cx="100" cy="100" r="90"></circle>
+              </svg>
+              <div class="skills-radial-label">
+                <div class="skills-radial-num" id="radial-percentage-num">0%</div>
+                <div class="skills-radial-text">Execution</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Biography Card for founder Krish -->
+        <div class="founder-card reveal-on-scroll reveal-image" style="margin-bottom: var(--spacing-lg);">
+          <div class="founder-img-wrapper">
+            <img src="assets/images/founder_portrait.png" alt="Krish — Nexaflow Founder" loading="lazy">
+          </div>
+          <div class="founder-details">
+            <span class="caps-badge">Founder & Curator</span>
+            <h3>Krish</h3>
+            <p style="font-size: 1.05rem; font-weight: 500; color: var(--color-accent);">“Quality is the ultimate differentiator in an AI-saturated market.”</p>
+            <p>
+              As the creative lead of Nexaflow, Krish approaches web design as structural architecture. With a background in luxury brand identities, print typography, and high-performance digital spaces, Krish coordinates the artistic and logical standards of the agency.
+            </p>
+            <p>
+              At Nexaflow, Krish oversees every single project, ensuring pixel perfection, harmonious colors, and clean structural performance before any launch.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3" style="margin-top: var(--spacing-lg);">
+          <div class="premium-card reveal-on-scroll reveal-text">
+            <h4 style="margin-bottom: var(--spacing-xs); color: var(--color-accent);">Our Mission</h4>
+            <p style="font-size: 0.95rem;">To eliminate generic digital templates and build premium web assets that reflect the true value of high-end business brands.</p>
+          </div>
+          <div class="premium-card reveal-on-scroll reveal-image">
+            <h4 style="margin-bottom: var(--spacing-xs); color: var(--color-accent);">Our Vision</h4>
+            <p style="font-size: 0.95rem;">To become the world's leading boutique digital design house for creative agencies, architecture hubs, and premium service firms.</p>
+          </div>
+          <div class="premium-card reveal-on-scroll reveal-button">
+            <h4 style="margin-bottom: var(--spacing-xs); color: var(--color-accent);">Our Philosophy</h4>
+            <p style="font-size: 0.95rem;">Warm linen background, Clash display typography, spacious grids, zero latency, and absolute pixel precision over heavy frameworks.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         PAGE 5: PROCESS (SCROLL TIMELINE INTERACTIVE)
+         ========================================== -->
+    <div id="page-process" class="page-view">
+      <section class="container">
+        <span class="caps-badge">The Blueprint</span>
+        <h2>How we build digital landmarks.</h2>
+        <p style="max-width: 600px; margin-bottom: var(--spacing-lg);">
+          We follow a highly disciplined, milestone-driven framework. We prioritize active creation and pixel refinement over endless administrative meetings.
+        </p>
+
+        <div class="timeline-wrapper" id="milestones-timeline-scroll">
+          
+          <!-- Step 1 -->
+          <div class="timeline-step reveal-on-scroll reveal-text active" data-step-index="0">
+            <div class="timeline-step-content">
+              <span class="timeline-step-badge">Phase 01</span>
+              <h3>Discovery & Metric Strategy</h3>
+              <p>We extract your brand core, analyze your competitors' layouts, and establish clear conversion metrics. We define what high-value actions your website must drive, establishing the foundation of our design goals.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-step reveal-on-scroll reveal-text" data-step-index="1">
+            <div class="timeline-step-content">
+              <span class="timeline-step-badge">Phase 02</span>
+              <h3>Deep Architectural Research</h3>
+              <p>We study physical visual cues matching your business—such as high-end print brochures, boutique interior designs, or high-luxury packaging. This enables us to formulate unique visual assets that stand completely apart from standard templates.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-step reveal-on-scroll reveal-image" data-step-index="2">
+            <div class="timeline-step-content">
+              <span class="timeline-step-badge">Phase 03</span>
+              <h3>Low-Friction Wireframing</h3>
+              <p>We construct structural layouts focusing purely on content flow, user routing, and button accessibility. We build our wireframes mobile-first, ensuring ease of thumb scrolling before designing any visual layers.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-step reveal-on-scroll reveal-image" data-step-index="3">
+            <div class="timeline-step-content">
+              <span class="timeline-step-badge">Phase 04</span>
+              <h3>Bespoke UI/UX Design</h3>
+              <p>We apply our luxurious design systems. We coordinate Clash typography, warm travertine palettes, delicate film grain accents, and gorgeous, high-contrast imagery to generate editorial layouts that look handcrafted and expensive.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-step reveal-on-scroll reveal-button" data-step-index="4">
+            <div class="timeline-step-content">
+              <span class="timeline-step-badge">Phase 05</span>
+              <h3>Semantic Coding & Assembly</h3>
+              <p>We translate the design into lightweight, lightning-fast codebases. We code using semantic tags, clean stylesheets, and custom routers that load instantaneously, guaranteeing peak Lighthouse speed indices.</p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="timeline-step reveal-on-scroll reveal-button" data-step-index="5">
+            <div class="timeline-step-content">
+              <span class="timeline-step-badge">Phase 06</span>
+              <h3>Rigorous Performance Testing</h3>
+              <p>We audit our code across all devices—including small mobile viewports, mid-range laptops, and massive high-res screens. We run intensive accessibility audits, form verifications, and speed checks.</p>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="timeline-step reveal-on-scroll reveal-button" data-step-index="6" style="padding-bottom: 0;">
+            <div class="timeline-step-content">
+              <span class="timeline-step-badge">Phase 07</span>
+              <h3>Launch & Optimization</h3>
+              <p>We push your website to high-performance servers, hook up standard web analytical suites, set up direct search engine indices, and monitor conversion metrics. Your brand is now an active digital landmark.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         PAGE 6: TESTIMONIALS (MAGAZINE STYLE & VIDEOS)
+         ========================================== -->
+    <!-- ==========================================
+         PAGE 6: TESTIMONIALS (REVIEWS WALL)
+         ========================================== -->
+    <div id="page-testimonials" class="page-view">
+      <section class="container">
+        <span class="caps-badge">Client Reviews</span>
+        <h2>Stories of digital authority.</h2>
+        <p style="max-width: 600px; margin-bottom: var(--spacing-md);">
+          See how high-end branding, mobile-first design, and conversion-focused layouts have helped premium service brands build trust and simplify scheduling.
+        </p>
+
+        <!-- Trust Section -->
+        <div class="trust-badges-container reveal-on-scroll">
+          <h3 class="trust-title">Trusted by 50+ Businesses</h3>
+          <div class="trust-badges-flex">
+            <span class="trust-badge-item">Healthcare</span>
+            <span class="trust-badge-item">Fitness</span>
+            <span class="trust-badge-item">Beauty</span>
+            <span class="trust-badge-item">Real Estate</span>
+            <span class="trust-badge-item">Local Businesses</span>
+          </div>
+        </div>
+
+        <!-- Reviews Masonry/Grid Wall -->
+        <div class="reviews-grid-container">
+          
+          <!-- Review 1: BrightSmile Dental -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-quote">
+              "Nexaflow completely transformed our online presence. Appointment bookings have become much easier and our clinic finally feels premium online."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Dr. Sarah Mitchell</span>
+              <span class="review-business-meta">BrightSmile Dental — Dental Clinic</span>
+            </div>
+          </article>
+          
+          <!-- Review 2: Luxe Aura -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-quote">
+              "Our salon's new booking interface looks absolutely gorgeous on mobile. We have noticed an increase in high-value styling package inquiries since launch."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Amanda Vance</span>
+              <span class="review-business-meta">Luxe Aura — Beauty Salon</span>
+            </div>
+          </article>
+          
+          <!-- Review 3: Apex Forge (4 Stars) -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            <p class="review-quote">
+              "The dark, boutique interface Nexaflow engineered is highly professional. The member portal loads quickly, though we had to tweak the sign-up flow slightly for older devices."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Marcus Forge</span>
+              <span class="review-business-meta">Apex Forge — Gym</span>
+            </div>
+          </article>
+          
+          <!-- Review 4: Skyline Haven -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-quote">
+              "Minimalist property catalogs that present listings like high-end art gallery slides. Our VIP clients find it extremely simple to request villa viewings."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Julian Vance</span>
+              <span class="review-business-meta">Skyline Haven — Real Estate</span>
+            </div>
+          </article>
+          
+          <!-- Review 5: BrightSmile Dental (4 Stars) -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            <p class="review-quote">
+              "A calming digital portal that mirrors the travertine interior of our physical clinic. It has significantly improved customer trust and lowered our booking friction."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Dr. Beatrice Smile</span>
+              <span class="review-business-meta">BrightSmile Dental — Dental Clinic</span>
+            </div>
+          </article>
+          
+          <!-- Review 6: Luxe Aura -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-quote">
+              "Handcrafted layout design that sets us apart from local competitors. Our customer inquiries have spiked because the scheduling steps are intuitive and clear."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Elena Rostova</span>
+              <span class="review-business-meta">Luxe Aura — Beauty Salon</span>
+            </div>
+          </article>
+          
+          <!-- Review 7: Apex Forge -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-quote">
+              "We needed a rapid, performant platform that represents our elite tier gym space. Nexaflow delivered pixel-perfect responsive layouts with zero framework bloat."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Marcus Sterling</span>
+              <span class="review-business-meta">Apex Forge — Gym</span>
+            </div>
+          </article>
+          
+          <!-- Review 8: Skyline Haven (4 Stars) -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            <p class="review-quote">
+              "We wanted a gridless, premium property portal to attract luxury buyers. The search filter system is fast and elegant, though we spent a week customizing the map layout."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Elena Vance</span>
+              <span class="review-business-meta">Skyline Haven — Real Estate</span>
+            </div>
+          </article>
+          
+          <!-- Review 9: Luxe Aura -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-quote">
+              "Every styling detail feels deliberate and expensive. Our wellness website loads instantly, which has greatly improved our mobile client bookings."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Clara Rostova</span>
+              <span class="review-business-meta">Luxe Aura — Beauty & Wellness</span>
+            </div>
+          </article>
+          
+          <!-- Review 10: Apex Forge (4 Stars) -->
+          <article class="review-card reveal-on-scroll">
+            <div class="review-stars" aria-label="4 out of 5 stars">★★★★☆</div>
+            <p class="review-quote">
+              "Very responsive member portal design with great dark mode aesthetics. Our team is very happy with the lead generation performance of the clean layout."
+            </p>
+            <div class="review-author-info">
+              <span class="review-client-name">Marcus Croft</span>
+              <span class="review-business-meta">Apex Forge — Fitness</span>
+            </div>
+          </article>
+          
+        </div>
+      </section>
+    </div>
+
+    <!-- ==========================================
+         PAGE 7: CONTACT (MULTI-STEP & LIVE COST CALCULATOR)
+         ========================================== -->
+    <div id="page-contact" class="page-view">
+      <section class="container">
+        
+        <div class="grid-2">
+          
+          <!-- Contact Left Details -->
+          <div class="reveal-on-scroll reveal-text">
+            <span class="caps-badge">Let's Connect</span>
+            <h2 style="font-size: clamp(2.5rem, 5vw, 4.2rem); margin-bottom: var(--spacing-sm);">Let's create something <span class="text-accent">exceptional.</span></h2>
+            <p style="max-width: 500px; margin-bottom: var(--spacing-md);">
+              We are selective with our collaborations, building only custom, high-caliber websites. Reach out today to schedule an initial strategic consultation.
+            </p>
+            
+            <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem;">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--color-card); border: var(--border-premium); display: flex; align-items: center; justify-content: center; color: var(--color-accent);">✉</div>
+                <div>
+                  <h5 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Direct Email</h5>
+                  <p style="font-weight: 600; color: var(--color-text-primary);"><a href="mailto:nexaflowofficiall@gmail.com" style="color: inherit; text-decoration: none;">nexaflowofficiall@gmail.com</a></p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--color-card); border: var(--border-premium); display: flex; align-items: center; justify-content: center; color: var(--color-accent);">💬</div>
+                <div>
+                  <h5 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">WhatsApp Direct</h5>
+                  <p style="font-weight: 600; color: var(--color-text-primary);"><a href="tel:+919855990775" style="color: inherit; text-decoration: none;">+91 9855990775</a></p>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--color-card); border: var(--border-premium); display: flex; align-items: center; justify-content: center; color: var(--color-accent);">📍</div>
+                <div>
+                  <h5 style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary);">Location</h5>
+                  <p style="font-weight: 600; color: var(--color-text-primary);">Greater Noida, Uttar Pradesh, India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Right: Premium 2-Step Form Wizard -->
+          <div class="contact-inquiry-box reveal-on-scroll reveal-image">
+            
+            <!-- Step Progress Indicators -->
+            <div class="form-steps-indicator-row" id="form-progress-indicator">
+              <div class="form-step-indicator-dot active" data-step="1">1</div>
+              <div class="form-step-indicator-dot" data-step="2">2</div>
+            </div>
+
+            <form id="agency-inquiry-form">
+              <!-- Honeypot spam protection -->
+              <div style="display: none;" aria-hidden="true">
+                <input type="text" id="client-honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+              </div>
+              
+              <!-- STEP 1: Basic Information -->
+              <fieldset class="form-step-panel active" data-step="1">
+                <legend style="display: none;">Basic Information</legend>
+                <span class="caps-badge">Step 1 of 2</span>
+                <h4 style="margin-bottom: var(--spacing-md);">Basic Information</h4>
+                
+                <div class="form-group-floating">
+                  <input type="text" id="client-name" class="form-input-floating" placeholder=" " required>
+                  <label for="client-name" class="form-label-floating">Full Name *</label>
+                </div>
+
+                <div class="form-group-floating">
+                  <input type="text" id="client-company" class="form-input-floating" placeholder=" ">
+                  <label for="client-company" class="form-label-floating">Company Name</label>
+                </div>
+
+                <div class="form-group-floating">
+                  <input type="text" id="client-location" class="form-input-floating" placeholder=" ">
+                  <label for="client-location" class="form-label-floating">City / State</label>
+                </div>
+              </fieldset>
+
+              <!-- STEP 2: Contact Information -->
+              <fieldset class="form-step-panel" data-step="2">
+                <legend style="display: none;">Contact Information</legend>
+                <span class="caps-badge">Step 2 of 2</span>
+                <h4 style="margin-bottom: var(--spacing-md);">Contact Information</h4>
+                
+                <div class="form-group-floating">
+                  <input type="email" id="client-email" class="form-input-floating" placeholder=" " required>
+                  <label for="client-email" class="form-label-floating">Email Address *</label>
+                </div>
+
+                <div class="form-group-floating">
+                  <input type="tel" id="client-phone" class="form-input-floating" placeholder=" ">
+                  <label for="client-phone" class="form-label-floating">Phone Number</label>
+                </div>
+              </fieldset>
+
+              <!-- Step Navigation buttons row -->
+              <div class="form-wizard-buttons-row">
+                <button type="button" class="btn btn-secondary btn-magnetic" id="wizard-prev-btn" style="display: none;">Back</button>
+                <button type="button" class="btn btn-primary btn-magnetic" id="wizard-next-btn">Continue</button>
+                <button type="submit" class="btn btn-primary btn-magnetic" id="wizard-submit-btn" style="display: none;">Submit Inquiry</button>
+              </div>
+
+            </form>
+
+            <!-- Error Feedback Screen -->
+            <div id="form-error-alert" style="display: none; margin-top: 1.5rem; padding: 1rem; border-radius: var(--radius-md); background-color: rgba(255, 74, 74, 0.05); border: 1px solid rgba(255, 74, 74, 0.15); color: #ff4a4a; text-align: center; font-size: 0.95rem; font-weight: 500;">
+              An error occurred while submitting your inquiry. Please try again.
+            </div>
+
+            <!-- Success Feedback Screen -->
+            <div id="form-success-alert" class="form-success-message">
+              <div class="success-icon-box">
+                <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h3 style="margin-bottom: var(--spacing-xs); font-family: var(--font-heading); font-size: 2rem;">Thank You</h3>
+              <p style="font-size: 1rem; color: var(--color-text-secondary); margin-bottom: 2rem;">We'll get back to you shortly.</p>
+              
+              <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                <a href="#work" id="success-close-btn" class="btn btn-primary btn-magnetic">View Our Work</a>
+                <a href="https://wa.me/919855990775" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-magnetic">WhatsApp Us</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Modern Accordion FAQs -->
+        <div class="faq-container">
+          <div class="reveal-on-scroll reveal-text" style="text-align: center; max-width: 600px; margin: 0 auto var(--spacing-lg);">
+            <span class="caps-badge">Common Queries</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Our operational structures, aesthetic methods, and launch timelines explained.</p>
+          </div>
+
+          <div class="faq-accordion reveal-on-scroll reveal-image">
+            
+            <div class="faq-item">
+              <button class="faq-header" aria-expanded="false" aria-controls="faq-panel-1">
+                <span class="faq-question">Why does mobile first design matter for my business?</span>
+                <span class="faq-icon-wrapper" aria-hidden="true">
+                  <span class="faq-icon-line horizontal"></span>
+                  <span class="faq-icon-line vertical"></span>
+                </span>
+              </button>
+              <div id="faq-panel-1" class="faq-panel" role="region">
+                <div class="faq-content">
+                  <p>Over 95% of active B2B and consumer traffic lands on websites through mobile screens while scrolling social media. Most typical agencies build a massive desktop layout and compress it, leaving bad thumb flow. We plan, sketch, and design our assets mobile-first, ensuring high thumb comfort and immediate mobile booking conversions.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" aria-expanded="false" aria-controls="faq-panel-2">
+                <span class="faq-question">How does Nexaflow guarantee 100/100 speed metrics?</span>
+                <span class="faq-icon-wrapper" aria-hidden="true">
+                  <span class="faq-icon-line horizontal"></span>
+                  <span class="faq-icon-line vertical"></span>
+                </span>
+              </button>
+              <div id="faq-panel-2" class="faq-panel" role="region">
+                <div class="faq-content">
+                  <p>Typical websites are weighed down by bloated template builders, bulky JavaScript layers, and heavy third-party plugins. We write clean, semantic HTML5 skeleton codes, custom style elements, and lightning-fast virtual router systems. By avoiding unoptimized resources, your pages load in under 1 second, increasing SEO index ranks and keeping visitors engaged.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" aria-expanded="false" aria-controls="faq-panel-3">
+                <span class="faq-question">What is your typical project timeline?</span>
+                <span class="faq-icon-wrapper" aria-hidden="true">
+                  <span class="faq-icon-line horizontal"></span>
+                  <span class="faq-icon-line vertical"></span>
+                </span>
+              </button>
+              <div id="faq-panel-3" class="faq-panel" role="region">
+                <div class="faq-content">
+                  <p>Timeline depends strictly on your project scope. High-impact landing pages take 1-2 weeks. Standard creative websites require 4-5 weeks, while comprehensive luxury e-commerce platforms or customized portals require 6-8 weeks of detailed creation, code mapping, and responsiveness checks.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-header" aria-expanded="false" aria-controls="faq-panel-4">
+                <span class="faq-question">Will I work directly with the founder, Krish?</span>
+                <span class="faq-icon-wrapper" aria-hidden="true">
+                  <span class="faq-icon-line horizontal"></span>
+                  <span class="faq-icon-line vertical"></span>
+                </span>
+              </button>
+              <div id="faq-panel-4" class="faq-panel" role="region">
+                <div class="faq-content">
+                  <p>Yes. Nexaflow operates as an exclusive design house, rather than a crowded agency factory. You collaborate directly with Krish, who oversees wireframing, palette mapping, pixel placements, and final launches. This ensures a consistent premium quality standard that typical managers can't deliver.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ==========================================
+       GLOBAL FOOTER SECTION
+       ========================================== -->
+  <footer>
+    <div class="container footer-grid">
+      
+      <!-- Brand column -->
+      <div>
+        <a href="#home" class="footer-logo">
+          Nexaflow<span class="logo-dot"></span>
+        </a>
+        <p style="margin-top: 1rem; font-size: 0.95rem; max-width: 320px;">
+          Handcrafting premium, mobile-first digital landmarks for high-value brands. Coded for speed, structured for extreme conversion.
+        </p>
+      </div>
+      
+      <!-- Links column -->
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <div class="footer-links-list">
+          <a href="#home">Home</a>
+          <a href="#work">Featured Work</a>
+          <a href="#services">Our Capabilities</a>
+          <a href="#about">Studio Profile</a>
+          <a href="#process">Work Method</a>
+          <a href="#testimonials">Client Stories</a>
+        </div>
+      </div>
+      
+      <!-- Contact columns -->
+      <div class="footer-links-col">
+        <h4>Connect</h4>
+        <div class="footer-links-list">
+          <span style="font-size: 0.95rem; color: #CCCCCC;">Greater Noida, Uttar Pradesh, India</span>
+          <a href="mailto:nexaflowofficiall@gmail.com">nexaflowofficiall@gmail.com</a>
+          <a href="tel:+919855990775" style="color: var(--color-accent-soft); font-weight: 500;">+91 9855990775</a>
+          <span style="font-size: 0.8rem; color: #888888; margin-top: 1rem;">Founder: Krish</span>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="container footer-bottom">
+      <p style="font-size: 0.8rem;">&copy; 2026 Nexaflow Studio. All rights reserved. Designed to attract.</p>
+      <div class="footer-bottom-links">
+        <a href="#contact">Privacy Policy</a>
+        <a href="#contact">Terms of Collaboration</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       CORE ROUTER & ANIMATIONS LOGIC
+       ========================================== -->
+  <script src="index.js"></script>
+</body>
+</html>

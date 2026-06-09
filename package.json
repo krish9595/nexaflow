@@ -1,0 +1,11 @@
+{
+  "name": "nexa-anti4",
+  "version": "1.0.0",
+  "description": "Nexaflow Premium Agency Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "serve ."
+  },
+  "dependencies": {}
+}
